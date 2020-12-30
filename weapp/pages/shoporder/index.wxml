@@ -1,0 +1,33 @@
+<view class="page">
+  <view class="page__bd">
+    <view style='height: 10rpx;'></view>
+    <view class="weui-form-preview" wx:for="{{orderList}}" wx:key="*this">
+      
+      <view class="weui-form-preview__bd">
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">订单号</view>
+          <view class="weui-form-preview__value">{{item.order_sn}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">交易门店</view>
+          <view class="weui-form-preview__value" style='color:#e64340'>{{item.shop_name}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">金额</view>
+          <view class="weui-form-preview__value" style='color:#e64340'>￥{{item.points}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">订单状态</view>
+          <view wx:if="{{item.status == 0}}" class="weui-form-preview__value">交易失败</view>
+          <view wx:else class="weui-form-preview__value" style='color:#0bb20c'>交易成功</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">下单时间</view>
+          <view class="weui-form-preview__value">{{item.create_time}}</view>
+        </view>
+        
+      </view>
+     
+    </view>
+  </view>
+</view>

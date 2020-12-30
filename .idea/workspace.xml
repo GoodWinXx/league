@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7ce1c29b-5a16-456d-aff4-8ec2637bac83" name="Default" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1bMQc6sYhDHmGkJuLy5AWdog9bZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server/source/application/store/view/outlet" />
+      <recent name="$PROJECT_DIR$/server/source/application/store/controller/store" />
+      <recent name="$PROJECT_DIR$/server/source/application/store/view/store" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server/source/application/store/view/blog" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7ce1c29b-5a16-456d-aff4-8ec2637bac83" name="Default" comment="" />
+      <created>1562118817464</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562118817464</updated>
+      <workItem from="1562118818983" duration="199000" />
+      <workItem from="1562375792867" duration="336000" />
+      <workItem from="1562387836847" duration="941000" />
+      <workItem from="1562390282831" duration="5569000" />
+      <workItem from="1546300930287" duration="307000" />
+      <workItem from="1563117063565" duration="1278000" />
+      <workItem from="1578564490048" duration="658000" />
+      <workItem from="1578932772040" duration="3713000" />
+      <workItem from="1580231255235" duration="8284000" />
+      <workItem from="1580487192843" duration="237000" />
+      <workItem from="1580991596116" duration="2929000" />
+      <workItem from="1582443001993" duration="2521000" />
+      <workItem from="1582865081248" duration="139000" />
+      <workItem from="1582984347522" duration="57000" />
+      <workItem from="1583406614205" duration="287000" />
+      <workItem from="1584275904549" duration="321000" />
+      <workItem from="1588439560659" duration="318000" />
+      <workItem from="1607898071640" duration="3296000" />
+      <workItem from="1607981681617" duration="1417000" />
+      <workItem from="1608135844344" duration="5680000" />
+      <workItem from="1609271721187" duration="9259000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="458" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1609280032248">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="458" y="212" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900@0.0.1440.900" timestamp="1609280032248" />
+    <state x="466" y="312" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1607980068555">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="466" y="312" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1440.900@0.0.1440.900" timestamp="1607980068555" />
+    <state x="390" y="183" key="NewPhpClassDialog" timestamp="1609276740211">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="390" y="183" key="NewPhpClassDialog/0.0.1440.900@0.0.1440.900" timestamp="1609276740211" />
+    <state x="539" y="380" key="NewPhpFileDialog" timestamp="1609276752648">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="539" y="380" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1609276752648" />
+    <state x="420" y="207" width="854" height="486" key="find.popup" timestamp="1607981855646">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="420" y="207" width="854" height="486" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1607981855646" />
+  </component>
+</project>

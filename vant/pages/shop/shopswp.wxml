@@ -1,0 +1,88 @@
+<scroll-view bindscroll="scroll" scroll-top="{{scrollTop}}" scroll-y="true" style="position:absolute; top:0; left:0; right:0; bottom:0;">
+<block wx:for="{{items}}" wx:for-item="item" wx:for-index="item_key" wx:key="this">
+<block wx:if="{{item.type === 'banner'}}">
+<view class="diy-banner">
+  <swiper autoplay="{{autoplay}}" class="banner-box swiper-box dot-{{item.style.btnShape}}" duration="{{duration}}" circular="{{true}}" indicator-dots="{{indicatorDots}}" interval="{{interval}}" indicator-color="{{item.style.btnColor}}" indicator-active-color="#000" bindchange="bindChange" data-item-key="{{item_key}}" style="height:{{imgHeights[item_key][imgCurrent[item_key]]}}rpx">
+    <navigator hover-class="none" wx:for-item="banner" url="/{{banner.linkUrl}}" wx:for="{{item.data}}" wx:key="this">
+      <swiper-item item-id="{{index}}">
+        <image class="slide-image" bindload="imagesHeight" src="{{banner.imgUrl}}" data-id="{{index}}" data-item-key="{{item_key}}"></image>
+      </swiper-item>
+    </navigator>
+  </swiper>
+</view>
+</block>
+</block>
+<van-search
+  value="{{ value }}"
+  placeholder="请输入搜索关键词"
+  bind:search="onSearch"
+  bind:cancel="onCancel"
+/>
+  <view class="merchant">
+    <view class="merchant-title">
+      <image src="/images/pinpai.jpg"></image>
+      <text>酷动门店</text>
+    </view>
+    <block>
+      <view class="nearby-shops-box">
+        <view class="nearby-shops-con" bindtap="linkTap" data-shopid='1' data-shopname='11'>
+          <image class="nearby-shops-img" src="/images/aa.jpg"></image>
+          <view class="nearby-shops-desc">
+            <text class="nearby-shops-desc-title">爱琴海</text>
+            <view class="nearby-shops-discount ellipsis">
+              <text>环境好</text>
+              <text>服务好</text>
+              <text class="distance">44km</text>
+            </view>
+            <view class="nearby-shops-tel">1565</view>
+          </view>
+        </view>
+        <view class="nearby-shops-add-nav clearfix">
+          <view class="nearby-shops-address">地址：333</view>
+          
+        </view>
+      </view>
+      
+
+      <view class="nearby-shops-box">
+        <view class="nearby-shops-con" bindtap="linkTap" data-shopid='1' data-shopname='11'>
+          <image class="nearby-shops-img" src="/images/aa.jpg"></image>
+          <view class="nearby-shops-desc">
+            <text class="nearby-shops-desc-title">爱琴海</text>
+            <view class="nearby-shops-discount ellipsis">
+              <text>环境好</text>
+              <text>服务好</text>
+              <text class="distance">44km</text>
+            </view>
+            <view class="nearby-shops-tel">1565</view>
+          </view>
+        </view>
+        <view class="nearby-shops-add-nav clearfix">
+          <view class="nearby-shops-address">地址：333</view>
+          
+        </view>
+      </view>
+
+      <view class="nearby-shops-box">
+        <view class="nearby-shops-con" bindtap="linkTap" data-shopid='1' data-shopname='11'>
+          <image class="nearby-shops-img" src="/images/aa.jpg"></image>
+          <view class="nearby-shops-desc">
+            <text class="nearby-shops-desc-title">爱琴海</text>
+            <view class="nearby-shops-discount ellipsis">
+              <text>环境好</text>
+              <text>服务好</text>
+              <text class="distance">44km</text>
+            </view>
+            <view class="nearby-shops-tel">1565</view>
+          </view>
+        </view>
+        <view class="nearby-shops-add-nav clearfix">
+          <view class="nearby-shops-address">地址：333</view>
+          
+        </view>
+      </view>
+    </block>
+</view>
+
+</scroll-view>
+<include src="../tabbar/tabbar.wxml" />

@@ -1,0 +1,39 @@
+<view class="page">
+  <view class="page__bd">
+    <view class="container">
+      <form bindsubmit="toPayTap" report-submit="true">
+        
+        <view class="goods-list">
+          <view class="list-title">门店</view>
+          <view class="a-goods">
+            <view class="img-box">
+              <image src="{{shop.logo}}" class="img" />
+            </view>
+            <view class="text-box">
+              <view class="arow arow01">
+                <view class="goods-name">{{shop.shop_name}}</view>
+              </view>
+            <view class="arow">
+                <view class="goods-label">{{shop.address}}</view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="peisong-way">
+          
+          <view class="row-box">
+            <view class="row-label">消费金额</view>
+            <view class="right-text">
+              <input name="amount" bindinput="getAmountContent" type="text" class="liuyan" placeholder="请输入消费金额" />
+            </view>
+          </view>
+        </view>
+        
+        
+        <view class="jiesuan-box">
+          <button class="to-pay-btn" formType="submit" style="width:100%;">立即支付</button>
+        </view>
+      </form>
+    </view>
+  </view>
+</view>

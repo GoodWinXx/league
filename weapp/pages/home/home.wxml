@@ -1,0 +1,30 @@
+<view class="page">
+    <view class="diy-search-box col-f ts-3">
+  <view class="dis-flex">
+    <view class="diy-search flex-box angle-{{item.style.searchStyle}} text-{{item.style.textAlign}}">
+      <navigator class="cont" hover-class="none" openType="navigate" url="../shopsearch/index">
+        <text class="iconfont icon-sousuo f-30"></text>
+        <text class="f-28">{{item.params.placeholder}}</text>
+      </navigator>
+    </view>
+  </view>
+</view>
+    <view class="goodsList">
+        <view class="a-gooods" wx:for="{{shops}}"  wx:key="{{index}}" >
+            <view class="" bindtap="toDetailsTap" data-index="{{index}}" data-id="{{item.id}}" style="">
+                <view class="goods-info">
+                    <view class="img-box">
+                        <image src="{{item.logo}}" class="img"/>
+                    </view>
+                    <view class="text-box">
+                        <view class="goods-title">{{item.shop_name}}</view>
+                        <view class="goods-label">{{item.shop_hours}}</view>
+                        <view class="goods-price">{{item.summary}}</view>
+                        
+                    </view>
+                </view>
+               
+            </view>
+        </view>
+    </view>
+</view>

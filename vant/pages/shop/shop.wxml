@@ -1,0 +1,37 @@
+<scroll-view bindscroll="scroll" scroll-top="{{scrollTop}}" scroll-y="true" style="position:absolute; top:0; left:0; right:0; bottom:0;">
+<!-- <van-search
+  value="{{ value }}"
+  placeholder="请输入搜索关键词"
+  bind:search="onSearch"
+  bind:cancel="onCancel"
+/> -->
+  <view class="merchant">
+    
+    <block>
+    
+      <view class="nearby-shops-box" wx:for="{{shops}}" wx:for-item="shop" wx:key="this">
+      <navigator url="../checkout/checkout?shop_id={{shop.id}}">
+        <view class="nearby-shops-con" bindtap="linkTap" data-shopid='{{shop.id}}' data-shopname='{{shop.shop_name}}'>
+          <image class="nearby-shops-img" src="{{shop.logo}}"></image>
+          <view class="nearby-shops-desc">
+            <text class="nearby-shops-desc-title">{{shop.shop_name}}</text>
+            <view class="nearby-shops-discount ellipsis">
+              <text>{{shop.shop_hours}}</text>
+            </view>
+            <view class="nearby-shops-tel">{{shop.mobile}}</view>
+          </view>
+        </view>
+        <view class="nearby-shops-add-nav clearfix">
+          <view class="nearby-shops-address">地址：{{shop.address}}</view>
+          
+        </view>
+        </navigator>
+      </view>
+      
+     
+     
+    </block>
+</view>
+
+</scroll-view>
+<include src="../tabbar/tabbar.wxml" />

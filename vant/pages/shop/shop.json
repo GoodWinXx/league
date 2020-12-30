@@ -1,0 +1,17 @@
+{
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTextStyle": "black",
+  "backgroundTextStyle": "light",
+  "navigationBarTitleText": "现花",
+  "usingComponents": {
+      "van-collapse": "../../dist/collapse/index",
+      "van-collapse-item": "../../dist/collapse-item/index",
+      "van-search": "../../dist/search/index",
+      "van-tabbar": "../../dist/tabbar/index",
+      "van-tabbar-item": "../../dist/tabbar-item/index",
+      "van-panel": "../../dist/panel/index",
+      "van-button": "../../dist/button/index",
+      "van-cell": "../../dist/cell/index",
+      "van-cell-group": "../../dist/cell-group/index"
+    }
+}

@@ -1,0 +1,19 @@
+
+<view class="container">
+  <view class="user">
+    <view class="order-navbar">
+      
+      <view class="order-navbar-footer dis-flex m-top10">
+        <view class="order-navbar-item flex-box">
+          
+            <button formType="submit" class="btn-normal">
+              <text class="order-navbar__name">可用积分</text>
+              <text class="order-navbar__name">{{userInfo.current_points}}</text>
+            </button>
+         
+        </view>
+      </view>
+    </view>
+  </view>
+  
+</view>

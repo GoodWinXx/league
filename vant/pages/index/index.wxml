@@ -1,0 +1,27 @@
+  <view class="merchant">
+    <view class="merchant-title">
+      <image src="/images/aa.jpg"></image>
+      <text>联盟商家</text>
+    </view>
+    <block>
+      <view class="nearby-shops-box">
+        <view class="nearby-shops-con" bindtap="linkTap" data-shopid='1' data-shopname='11'>
+          <image class="nearby-shops-img" src="/images/aa.jpg"></image>
+          <view class="nearby-shops-desc">
+            <text class="nearby-shops-desc-title">爱琴海</text>
+            <view class="nearby-shops-discount ellipsis">
+              <text>环境好</text>
+              <text>服务好</text>
+              <text class="distance">44km</text>
+            </view>
+            <view class="nearby-shops-tel">1565</view>
+          </view>
+        </view>
+        <view class="nearby-shops-add-nav clearfix">
+          <view class="nearby-shops-address">地址：333</view>
+          
+        </view>
+      </view>
+      
+    </block>
+</view>

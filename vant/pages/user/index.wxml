@@ -1,0 +1,39 @@
+<view class="container" wx:if="{{ userInfo.user_id > 0 }}">
+  <!-- 用户信息 -->
+  <view class="user">
+    <view class="user-header" style="background-image: url('/images/user-bg.png');">
+      <view class="user-header-cont">
+        <view class="user-header-avatar">
+          <open-data class="" lang="zh_CN" type="userAvatarUrl"></open-data>
+        </view>
+        <open-data class="user-header-cont-name" lang="zh_CN" type="userNickName"></open-data>
+
+      </view>
+    </view>
+    <!-- 订单导航栏 -->
+    <view class="order-navbar">
+      <form bindsubmit="onTargetOrder" data-type="{{account_type}}" report-submit="true">
+        <button formType="submit" class="btn-normal">
+          <view class="order-navbar-header dis-flex">
+            <text class="f-30">我的账户</text>
+            <view class="dis-flex flex-y-center">
+              <text class="f-24 col-6">我的积分</text>
+              <text class="iconfont icon-xiangyoujiantou user-orderJtou"></text>
+            </view>
+          </view>
+        </button>
+      </form>
+      <view class="order-navbar-footer dis-flex m-top10">
+        <view class="order-navbar-item flex-box">
+          <form bindsubmit="onTargetOrder" data-type="{{order_type}}" report-submit="true">
+            <button formType="submit" class="btn-normal">
+              <text class="order-navbar__icon iconfont icon-form"></text>
+              <text class="order-navbar__name">我的订单</text>
+            </button>
+          </form>
+        </view>
+      </view>
+    </view>
+  </view>
+  
+</view>

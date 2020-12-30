@@ -1,0 +1,6 @@
+<!--pages/my/my.wxml-->
+<view wx:for="{{orders}}" wx:for-item="order" wx:key="this">
+<van-panel title="{{order.order_sn}}" desc="{{order.create_time}}" status="{{order.status_text}}" use-footer-slot>
+<view style="padding:13px;color:#999;">{{order.shop_name}}使用积分{{order.points}}</view>
+</van-panel>
+</view>

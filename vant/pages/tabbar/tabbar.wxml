@@ -1,0 +1,8 @@
+<van-tabbar
+  active="{{ active }}"
+  active-color="#ff9966"
+  bind:change="onChange"
+>
+  <van-tabbar-item icon="home-o">门店</van-tabbar-item>
+  <van-tabbar-item icon="friends-o">我的</van-tabbar-item>
+</van-tabbar>

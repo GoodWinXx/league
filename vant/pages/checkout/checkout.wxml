@@ -1,0 +1,37 @@
+<view class="container p-bottom">
+<view class="m-top20">
+    <view class="checkout_list ">
+        <view class="dis-flex flow-shopList" data-index="1">
+          <view class="flow-list-left">
+            <image style="margin-left:15px;" mode="scaleToFill" src="{{shop.logo}}"></image>
+          </view>
+          <view class="flow-list-right">
+            <text class="f-30 col-3 twolist-hidden">{{shop.shop_name}}</text>
+            <text class="f-26 col-7">{{shop.address}}</text>
+            
+          </view>
+        </view>
+    </view>
+
+  </view>
+<van-cell-group>
+  <van-field
+    value="{{ points }}"
+    required
+    clearable
+    label="消费积分"
+    placeholder="请输入积分"
+    bind:change="bindInputPoints"
+  />
+
+</van-cell-group>
+ <view class="flow-fixed-footer b-f m-top10">
+    <view class="dis-flex chackout-box">
+      
+      <view bindtap="submitOrder" class="chackout-right">
+        <text class="flow-btn">确认</text>
+      </view>
+    </view>
+  </view>
+
+</view>

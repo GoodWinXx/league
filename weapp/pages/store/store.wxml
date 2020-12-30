@@ -1,0 +1,54 @@
+<view class="page">
+  <view class="page__bd">
+    <view class="swiper-container">
+      <swiper class="swiper_box" autoplay="true" bindchange="swiperchange">
+        <block wx:for="{{bannerList}}" wx:key="*this">
+          <swiper-item>
+            <image bindtap="tapBanner" data-id="{{item.businessId}}" src="{{item.picUrl}}" />
+          </swiper-item>
+        </block>
+      </swiper>
+      <view class="dots">
+        <block wx:for="{{bannerList}}" wx:key="*this">
+          <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>
+        </block>
+      </view>
+    </view>
+      <view class="weui-cells__title">{{shopSubList.shop_name}}</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_access" hover-class="weui-cell_active" data-id="{{shopSubList.id}}" bindtap='goMap'>
+          <view class="weui-cell__hd">
+            <image src="/images/icon/location.png"></image>
+          </view>
+          <view class="weui-cell__bd">{{ shopSubList.address }}</view>
+          <!-- <view class="weui-cell__ft weui-cell__ft_in-access">地图</view>-->
+        </view>
+        <view class="weui-cell">
+          <view class="weui-cell__hd">
+            <image src="/images/icon/time.png"></image>
+          </view>
+          <view class="weui-cell__bd">营业时间</view>
+          <view class="weui-cell__ft">{{ shopSubList.shop_hours }}</view>
+        </view>
+        <view class="weui-cell">
+          <view class="weui-cell__hd">
+            <image src="/images/icon/tel.png"></image>
+          </view>
+          <view class="weui-cell__bd">联系电话</view>
+          <view class="weui-cell__ft" data-tel="{{shopSubList.mobile}}" bindtap='callPhone'>{{ shopSubList.mobile }}</view>
+        </view>
+        <view class="weui-cell">
+          <view class="weui-cell__hd">
+            <image src="/images/icon/txt.png" style="margin-right: 5px;vertical-align: middle;"></image>
+          </view>
+          <view class="weui-cell__bd">简介</view>
+          <view class="weui-cell__ft" >{{ shopSubList.summary }}</view>
+        </view>
+      </view>
+      
+  </view>
+
+  <view class='page__ft' style="margin-top:60px;">
+    <view bindtap="useBuy" class="check-bt" data-id="{{shopSubList.id}}" data-type="buyNow" style="background-color:#e64340;"> 立即消费</view>
+  </view>
+</view>

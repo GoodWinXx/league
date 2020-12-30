@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "我的积分",
+   "navigationBarBackgroundColor": "#ffdd00",
+  "usingComponents": {
+      "van-tabbar": "../../dist/tabbar/index",
+        "van-tabbar-item": "../../dist/tabbar-item/index",
+        "van-panel": "../../dist/panel/index"
+    }
+}
